@@ -73,13 +73,16 @@ body {
     outline: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 .header__form button {
     height: inherit;
     padding: 0 8px;
     border: 0;
     background: none;
     border-left: 1px solid #e6e6e6;
-    cursor: pointer;
 }
 
 .header__cart {
@@ -92,7 +95,6 @@ body {
     background-color: #f16d7f;
     color: white;
     border: none;
-    cursor: pointer;
 }
 
 .top-nav {
@@ -194,7 +196,8 @@ body {
     margin-top: 100px;
 }
 
-.card-box h2, h3 {
+.card-box h2,
+.card-box h3 {
     text-align: center;
     letter-spacing: 0.025em;
 }
@@ -266,7 +269,6 @@ body {
     letter-spacing: 0.025em;
     color: #ffffff;
     border: 0;
-    cursor: pointer;
 }
 
 .feature-box {
@@ -416,16 +418,14 @@ body {
     margin-top: 48px;
 }
 
-.comment__slider
-.grey,
+.comment__slider .grey,
 .red {
     width: 38px;
     height: 4px;
     background-color: #d6d6d6;
 }
 
-.comment__slider
-.red {
+.comment__slider .red {
     margin: 0 12px;
     background-color: #f16d7f;
 }
@@ -482,7 +482,6 @@ body {
     letter-spacing: 0.025em;
     color: #ffffff;
     outline: none;
-    cursor: pointer;
 }
 
 footer {
@@ -584,4 +583,268 @@ footer {
 
 .copyright__socials a:not(:last-child) {
     margin-right: 10px;
+}
+
+/*******************
+* SHOPPING CART
+********************/
+.breadcrumb-wrapper {
+    height: 148px;
+    background-color: #f8f3f4;
+}
+
+.breadcrumb {
+    height: 148px;
+    background-color: #f8f3f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.breadcrumb h1 {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    color: #f16d7f;
+}
+
+.breadcrumb nav a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #636363;
+    text-decoration: none;
+}
+
+.breadcrumb nav a:last-child {
+    font-weight: 700;
+    color: #f16d7f;
+}
+
+.cart {
+    margin-top: 90px;
+}
+
+.cart__row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #eaeaea;
+    margin-top: 26px;
+    color: #656565;
+}
+
+.cart__row:first-of-type {
+    padding-bottom: 22px;
+    margin-top: 0;
+}
+
+.cart .head {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.cart .head div:first-child {
+    width: 300px;
+}
+
+.cart__row > div:not(:first-child) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart__row .article {
+    display: flex;
+    width: 300px;
+}
+
+.cart__row .article img {
+    margin-right: 24px;
+}
+
+.cart__row .article h3 {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+.cart__row .article .details {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #575757;
+}
+
+.cart__row .article .details .value {
+    font-weight: 300;
+    color: #6f6e6e;
+}
+
+.cart__row .price,
+.cart__row .quantity,
+.cart__row .shipping,
+.cart__row .subtotal {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #656565;
+}
+
+.cart__row .action {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #c0c0c0;
+}
+
+.cart__row .quantity input {
+    width: 54px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    text-align: center;
+}
+
+.cart-buttons {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-buttons button {
+    width: 235px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+}
+
+.cart-footer {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cart-footer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cart-footer h3 {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.cart-footer__shipping select,
+.cart-footer__shipping input,
+.cart-footer__discount input {
+    width: 355px;
+    height: 45px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #b1b1b1;
+    padding-left: 20px;
+    margin-top: 22px;
+}
+
+.cart-footer__shipping select {
+    width: 377px;
+}
+
+.cart-footer__shipping button,
+.cart-footer__discount button {
+    width: 100px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    margin-top: 22px;
+}
+
+.cart-footer__discount button {
+    width: 118px;
+    height: 35px;
+}
+
+.cart-footer__discount form label {
+    margin: 30px 0 25px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #000000;
+}
+
+.cart-footer__grand-total {
+    width: 360px;
+    background-color: #f5f3f3;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.cart-footer__grand-total button {
+    width: 273px;
+    height: 50px;
+    background-color: #f16d7f;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+}
+
+.grand-total__sub-total {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    text-align: right;
+    margin-bottom: 14px;
+}
+
+.grand-total__sub-total span:last-child {
+    margin-left: 15px;
+}
+
+.grand-total__total {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.grand-total__total span:last-child {
+    margin-left: 15px;
+    color: #f16d7f;
 }
