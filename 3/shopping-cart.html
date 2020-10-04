@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shopping Cart - Online shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                bran<span>d</span>
+            </div>
+            <form class="header__form">
+                <div class="browse">
+                    Browse <i class="fas fa-caret-down"></i>
+                </div>
+                <input placeholder="Search for Item..." type="text">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <img class="header__cart" src="images/cart.png" alt="">
+            <button class="header__account-button">
+                My Account
+                <i class="fas fa-caret-down"></i>
+            </button>
+        </div>
+    </header>
+    <nav class="top-nav">
+        <a href="#" title="Home">Home</a>
+        <a href="#" title="Man">Man</a>
+        <a href="#" title="Women">Women</a>
+        <a href="#" title="Kids">Kids</a>
+        <a href="#" title="Accoseriese">Accoseriese</a>
+        <a href="#" title="Featured">Featured</a>
+        <a href="#" title="Hot Deals">Hot Deals</a>
+    </nav>
+    <div class="breadcrumb-wrapper">
+        <div class="breadcrumb container">
+            <h1>New arrivals</h1>
+            <nav>
+                <a href="#" title="Home">Home</a> /
+                <a href="#" title="Men">Men</a> /
+                <a href="" # title="New arrivals">New arrivals</a>
+            </nav>
+        </div>
+    </div>
+    <div class="cart container">
+        <div class="cart__row head">
+            <div>Product details</div>
+            <div>Unite price</div>
+            <div>Quantity</div>
+            <div>Shipping</div>
+            <div>Subtotal</div>
+            <div>Action</div>
+        </div>
+        <div class="cart__row">
+            <div class="article">
+                <img src="images/cart/1.jpg" alt="">
+                <div class="details">
+                    <h3>Mango People T-shirt</h3>
+                    <div>
+                        Color: <span class="value">Red</span>
+                    </div>
+                    <div>
+                        Size: <span class="value">XII</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price">$150</div>
+            <div class="quantity">
+                <input type="text" value="2">
+            </div>
+            <div class="shipping">FREE</div>
+            <div class="subtotal">$300</div>
+            <div class="action">
+                <i class="fas fa-times-circle"></i>
+            </div>
+        </div>
+        <div class="cart__row">
+            <div class="article">
+                <img src="images/cart/2.jpg" alt="">
+                <div class="details">
+                    <h3>Mango People T-shirt</h3>
+                    <div>
+                        Color: <span class="value">Red</span>
+                    </div>
+                    <div>
+                        Size: <span class="value">XII</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price">$150</div>
+            <div class="quantity">
+                <input type="text" value="2">
+            </div>
+            <div class="shipping">FREE</div>
+            <div class="subtotal">$300</div>
+            <div class="action">
+                <i class="fas fa-times-circle"></i>
+            </div>
+        </div>
+        <div class="cart__row">
+            <div class="article">
+                <img src="images/cart/3.jpg" alt="">
+                <div class="details">
+                    <h3>Mango People T-shirt</h3>
+                    <div>
+                        Color: <span class="value">Red</span>
+                    </div>
+                    <div>
+                        Size: <span class="value">XII</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price">$150</div>
+            <div class="quantity">
+                <input type="text" value="2">
+            </div>
+            <div class="shipping">FREE</div>
+            <div class="subtotal">$300</div>
+            <div class="action">
+                <i class="fas fa-times-circle"></i>
+            </div>
+        </div>
+        <div class="cart-buttons">
+            <button>Clear shopping cart</button>
+            <button>Continue shopping</button>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-footer__shipping">
+                <form action="#">
+                    <h3>Shipping adress</h3>
+                    <select>
+                        <option>Russia</option>
+                        <option>Germany</option>
+                        <option>USA</option>
+                    </select>
+                    <input type="text" placeholder="State">
+                    <input type="number" placeholder="Postcode / Zip">
+                    <button>Get a quote</button>
+                </form>
+            </div>
+            <div class="cart-footer__discount">
+                <form action="#">
+                    <h3>Coupon discount</h3>
+                    <label for="state">Enter your coupon code if you have one</label>
+                    <input id="state" type="text" placeholder="State">
+                    <button>Apply coupon</button>
+                </form>
+            </div>
+            <div class="cart-footer__grand-total">
+                <div class="grand-total__sub-total">
+                    <span>Sub total</span>
+                    <span>$900</span>
+                </div>
+                <div class="grand-total__total">
+                    <span>Grand total</span>
+                    <span>$900</span>
+                </div>
+                <button>Proceed to checkout</button>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe">
+        <div class="comment-wrapper">
+            <div class="comment-box">
+                <img src="images/author.png" alt="Sales & discounts">
+                <div class="comment__content">
+                    <p class="comment__text">
+                        "Vestibulum quis porttitor dui! Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut"
+                    </p>
+                    <h5>Bin Burhan</h5>
+                    <h6>Dhaka, Bd</h6>
+                    <div class="comment__slider">
+                        <div class="grey"></div>
+                        <div class="red"></div>
+                        <div class="grey"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-wrapper">
+            <div class="subscribe-box">
+                <h5>subscribe</h5>
+                <h6>for our newletter and promotion</h6>
+                <form class="subscribe-box__form">
+                    <input placeholder="Enter Your Email" type="text">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="container">
+        <div class="footer-left">
+            <div class="logo">
+                BRAN<span>D</span>
+            </div>
+            <div class="footer-left__text">
+                Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate
+                multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
+                processes and cross-unit partnerships.
+            </div>
+            <div>
+                Efficiently plagiarize 24/365 action items and focused infomediaries.
+                Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+            </div>
+        </div>
+        <div class="footer-nav">
+            <h3>COMPANY</h3>
+            <a href="#" title="Home">Home</a>
+            <a href="#" title="Shop">Shop</a>
+            <a href="#" title="About">About</a>
+            <a href="#" title="How It Works">How It Works</a>
+            <a href="" title="Contact">Contact</a>
+        </div>
+        <div class="footer-nav">
+            <h3>INFORMATION</h3>
+            <a href="#" title="Tearms and Condition">Tearms &amp; Condition</a>
+            <a href="#" title="Privacy Policy">Privacy Policy</a>
+            <a href="#" title="How to Bu">How to Buy</a>
+            <a href="#" title="How to Sell">How to Sell</a>
+            <a href="#" title="Promotion">Promotion</a>
+        </div>
+        <div class="footer-nav">
+            <h3>SHOP CATEGORY</h3>
+            <a href="#" title="Men">Men</a>
+            <a href="#" title="Women">Women</a>
+            <a href="#" title="Child">Child</a>
+            <a href="#" title="Apparel">Apparel</a>
+            <a href="#" title="Browse All">Browse All</a>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="copyright-wrapper container">
+            <div class="copyright__year">
+                © 2020 Brand All Rights Reserved.
+            </div>
+            <div class="copyright__socials">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-pinterest-p"></i></a>
+                <a href=""><i class="fab fa-google-plus-g"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
