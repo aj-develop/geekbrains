@@ -1,9 +1,5 @@
 @import "bootstrap/scss/bootstrap";
 @import "variables";
-@import "header";
-@import "top-nav";
-@import "breadcrumb";
-@import "copyright";
 
 *{
   margin: 0;
@@ -17,3 +13,11 @@ body {
 .wrapper {
   min-height: 100vh;
 }
+
+@import "header";
+@import "top-nav";
+@import "breadcrumb";
+@import "footer";
+@import "copyright";
+@import "subscribe";
+@import "checkout";

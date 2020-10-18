@@ -55,3 +55,14 @@
 .copyright__socials a:not(:last-child) {
   margin-right: 10px;
 }
+
+@include media-breakpoint-down(sm) {
+  .copyright-wrapper {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .copyright__year, .copyright__socials {
+    margin: 16px 0;
+  }
+}
