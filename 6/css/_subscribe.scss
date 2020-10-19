@@ -5,6 +5,7 @@
   background: url("../images/subscribe_background.png") no-repeat center, rgba(242, 242, 242, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
+  margin-top: 79px;
 }
 
 .comment-wrapper,
@@ -12,17 +13,20 @@
   height: inherit;
 }
 
-.comment-wrapper {
+.comment-wrapper,
+.subscribe-wrapper {
   display: flex;
   align-items: center;
+  height: 438px;
+}
+
+.comment-wrapper {
   justify-content: flex-end;
   padding-right: 70px;
 }
 
 .subscribe-wrapper {
   border-left: 1px solid white;
-  display: flex;
-  align-items: center;
 }
 
 .comment-box {
@@ -149,7 +153,14 @@
 }
 
 @include media-breakpoint-down(lg) {
-  .subscribe {
+
+  .subscribe .row {
+    justify-content: center;
+  }
+
+  .subscribe,
+  .comment-wrapper,
+  .subscribe-wrapper {
     width: auto;
     height: fit-content;
   }
@@ -159,6 +170,10 @@
     justify-content: center;
     margin: 20px 0;
     align-items: unset;
+  }
+
+  .subscribe-wrapper {
+    border-left: none;
   }
 
   .comment__content h5 {
@@ -194,5 +209,9 @@
 
   .subscribe-box {
     margin-left: 0;
+  }
+
+  .subscribe-box__form input {
+    width: 192px;
   }
 }
