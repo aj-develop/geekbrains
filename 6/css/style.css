@@ -8595,6 +8595,7 @@ button {
   .main-shopping-cart .cart__row {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1px;
     padding-bottom: 26px;
     border-bottom: 1px solid #eaeaea;
     margin-top: 26px;
@@ -8625,7 +8626,7 @@ button {
       line-height: 20px;
       font-weight: 400;
       color: #656565; }
-    .main-shopping-cart .cart__row .action {
+    .main-shopping-cart .cart__row .action .fa-times-circle {
       font-size: 16px;
       line-height: 1.2;
       font-weight: 400;
@@ -8645,18 +8646,20 @@ button {
   .main-shopping-cart .cart__row:first-of-type {
     padding-bottom: 22px;
     margin-top: 0; }
-.main-shopping-cart .cart-buttons button {
-  width: 235px;
-  height: 50px;
-  background-color: #ffffff;
-  border: 1px solid #eaeaea;
-  font-size: 14px;
-  line-height: 1.2;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #4a4a4a; }
-.main-shopping-cart .cart-buttons div:last-child {
-  text-align: right; }
+.main-shopping-cart .cart-buttons {
+  margin-top: 64px; }
+  .main-shopping-cart .cart-buttons button {
+    width: 235px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a; }
+  .main-shopping-cart .cart-buttons div:last-child {
+    text-align: right; }
 .main-shopping-cart .cart-footer {
   margin-top: 44px; }
   .main-shopping-cart .cart-footer form {
@@ -8733,6 +8736,19 @@ button {
     margin-left: 15px;
     color: #f16d7f; }
 @media (max-width: 575.98px) {
+  .main-shopping-cart .cart .head {
+    display: none; }
+  .main-shopping-cart .cart__row {
+    grid-template-columns: 1fr; }
+  .main-shopping-cart .attribute::before {
+    content: attr(data-name);
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #575757; }
+  .main-shopping-cart .attribute {
+    display: grid !important;
+    grid-template-columns: minmax(9em, 122px) 1fr; }
   .main-shopping-cart .cart-buttons {
     text-align: center; }
     .main-shopping-cart .cart-buttons div:last-child {
