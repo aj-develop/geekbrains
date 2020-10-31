@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Single page</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                bran<span>d</span>
+            </div>
+            <form class="header__form">
+                <div class="browse">
+                    Browse <i class="fas fa-caret-down"></i>
+                </div>
+                <input placeholder="Search for Item..." type="text">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <img class="header__cart" src="images/cart.png" alt="">
+            <button class="header__account-button">
+                My Account
+                <i class="fas fa-caret-down"></i>
+            </button>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse top-nav show" id="navbarNavDropdown">
+                <a href="#" title="Home">Home</a>
+                <a href="#" title="Man">Man</a>
+                <a href="#" title="Women">Women</a>
+                <a href="#" title="Kids">Kids</a>
+                <a href="#" title="Accoseriese">Accoseriese</a>
+                <a href="#" title="Featured">Featured</a>
+                <a href="#" title="Hot Deals">Hot Deals</a>
+            </div>
+        </div>
+    </nav>
+    <div class="breadcrumb-wrapper">
+        <div class="breadcrumb container">
+            <h1>New arrivals</h1>
+            <nav>
+                <a href="#" title="Home">Home</a> /
+                <a href="#" title="Men">Men</a> /
+                <a href="#" title="New arrivals">New arrivals</a>
+            </nav>
+        </div>
+    </div>
+    <div class="main-single-page">
+        <div id="carouselExampleControls" class="container carousel slide slider carousel-dark"
+             data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/single_page/image_slide_1.jpg" class="img-fluid" alt="1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/single_page/image_slide_2.jpg" class="img-fluid" alt="2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/single_page/image_slide_3.jpg" class="img-fluid" alt="3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="content_wrapper">
+                    <h3 class="content__subHeadline">WOMEN COLLECTION</h3>
+                    <div class="content__separator"></div>
+                    <h2 class="content__headline">Moschino Cheap And Chic</h2>
+                    <div class="content__text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua tempor invidunt ut
+                        labore et dolore magna voluptua tempor
+                    </div>
+                    <div class="content__material-designer">
+                        <div>Material: <span class="content__material-designer__value">Cotton</span></div>
+                        <div>Designer: <span class="content__material-designer__value">Binburhan</span>
+                        </div>
+                    </div>
+                    <div class="content__price">$561</div>
+                    <div class="content__divider"></div>
+                    <form class="content__filter" action="#">
+                        <div>
+                            <label class="content__filter__label" for="filter-color">Choose color</label>
+                            <div>
+                                <div>
+                                    <select class="content__filter__select" name="color" id="filter-color">
+                                        <option value="">Red</option>
+                                        <option value="">Black</option>
+                                        <option value="">White</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="content__filter__label" for="filter-size">Choose size</label>
+                            <div>
+                                <select class="content__filter__select" name="size" id="filter-size">
+                                    <option value="">S</option>
+                                    <option value="">M</option>
+                                    <option value="">L</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="content__filter__label" for="filter-quantity">Quantity</label>
+                            <div style="height: 35px">
+                                <input class="content__filter__quantity" type="text" value="2" id="filter-quantity">
+                            </div>
+                        </div>
+
+                        <button class="content__filter__cartButton">
+                            <img class="content__filter__imageCartButton" src="images/single_page/cart_button.png"
+                                 alt="Add to Cart">
+                            Add to Cart
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="card-box">
+                <h2>you may like also</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-2 row-cols-xl-4 card-row">
+                    <div class="col mb-5 d-flex justify-content-center">
+                        <div class="card border-0 h-100">
+                            <img src="images/single_page/products/1.jpg" class="card-img-top"
+                                 alt="Mango People T-shirt">
+                            <div class="card-body">
+                                <h5 class="card-title">BLAZE LEGGINGS</h5>
+                                <p class="card-text card__price">$52.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 d-flex justify-content-center">
+                        <div class="card border-0 h-100">
+                            <img src="images/single_page/products/4.jpg" class="card-img-top"
+                                 alt="Mango People T-shirt">
+                            <div class="card-body">
+                                <h5 class="card-title">ALEXA SWEATER</h5>
+                                <p class="card-text card__price">$52.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 d-flex justify-content-center">
+                        <div class="card border-0 h-100">
+                            <img src="images/single_page/products/3.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">AGNES TOP</h5>
+                                <p class="card-text card__price">$52.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 d-flex justify-content-center">
+                        <div class="card border-0 h-100">
+                            <img src="images/single_page/products/4.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">SYLVA SWEATER</h5>
+                                <p class="card-text card__price">$52.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="subscribe">
+        <div class="container align-items-center">
+            <div class="row">
+                <div class="col-lg-6  comment-wrapper">
+                    <div class="comment-box">
+                        <img src="images/author.png" alt="Sales & discounts">
+                        <div class="comment__content">
+                            <p class="comment__text">
+                                "Vestibulum quis porttitor dui! Lorem ipsum dolor sit amet,
+                                consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut"
+                            </p>
+                            <h5>Bin Burhan</h5>
+                            <h6>Dhaka, Bd</h6>
+                            <div class="comment__slider">
+                                <div class="grey"></div>
+                                <div class="red"></div>
+                                <div class="grey"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 subscribe-wrapper">
+                    <div class="subscribe-box">
+                        <h5>subscribe</h5>
+                        <h6>for our newsletter and promotion</h6>
+                        <form class="subscribe-box__form">
+                            <input placeholder="Enter Your Email" type="text">
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer container">
+        <div class="row">
+            <div class="col-lg-6 footer-left">
+                <div class="logo">
+                    BRAN<span>D</span>
+                </div>
+                <div class="footer-left__text">
+                    Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                    syndicate
+                    multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
+                    processes and cross-unit partnerships.
+                </div>
+                <div class="footer-left__text2">
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </div>
+            </div>
+            <div class="col-lg-6 footer-right">
+                <div class="footer-nav">
+                    <h3>COMPANY</h3>
+                    <a href="#" title="Home">Home</a>
+                    <a href="#" title="Shop">Shop</a>
+                    <a href="#" title="About">About</a>
+                    <a href="#" title="How It Works">How It Works</a>
+                    <a href="" title="Contact">Contact</a>
+                </div>
+                <div class="footer-nav">
+                    <h3>INFORMATION</h3>
+                    <a href="#" title="Tearms and Condition">Tearms &amp; Condition</a>
+                    <a href="#" title="Privacy Policy">Privacy Policy</a>
+                    <a href="#" title="How to Bu">How to Buy</a>
+                    <a href="#" title="How to Sell">How to Sell</a>
+                    <a href="#" title="Promotion">Promotion</a>
+                </div>
+                <div class="footer-nav">
+                    <h3>SHOP CATEGORY</h3>
+                    <a href="#" title="Men">Men</a>
+                    <a href="#" title="Women">Women</a>
+                    <a href="#" title="Child">Child</a>
+                    <a href="#" title="Apparel">Apparel</a>
+                    <a href="#" title="Browse All">Browse All</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="copyright-wrapper container">
+            <div class="copyright__year">
+                © 2020 Brand All Rights Reserved.
+            </div>
+            <div class="copyright__socials">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-pinterest-p"></i></a>
+                <a href=""><i class="fab fa-google-plus-g"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+        crossorigin="anonymous"></script>
+</body>
+</html>

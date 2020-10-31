@@ -8197,7 +8197,8 @@ button {
   .footer {
     justify-content: center;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: 60px !important; }
 
   .footer-left {
     width: auto; }
@@ -8211,6 +8212,9 @@ button {
   .footer-nav a {
     line-height: 26px; } }
 @media (max-width: 575.98px) {
+  .copyright {
+    margin-top: 30px !important; }
+
   .footer-right {
     flex-direction: column;
     justify-content: center;
@@ -9260,5 +9264,201 @@ button {
 
 .subscribe {
   margin-top: 0; }
+
+.main-single-page {
+  margin-bottom: 92px; }
+  .main-single-page .content {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    max-width: 1140px;
+    margin: -45px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .main-single-page .content_wrapper {
+      max-width: 640px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 73px 0 122px; }
+    .main-single-page .content__headline {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #4d4d4d;
+      margin-bottom: 67px; }
+    .main-single-page .content__subHeadline {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #ef5b70; }
+    .main-single-page .content__separator {
+      width: 63px;
+      height: 3px;
+      background-color: #ef5b70;
+      margin: 14px 0 17px; }
+    .main-single-page .content__text {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 300;
+      color: #5e5e5e;
+      text-align: center;
+      max-width: 618px;
+      margin-bottom: 28px; }
+    .main-single-page .content__material-designer {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #b9b9b9;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase; }
+    .main-single-page .content__material-designer div:first-child {
+      margin-right: 46px; }
+    .main-single-page .content__material-designer__value {
+      color: #2f2f2f; }
+    .main-single-page .content__price {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #ef5b70;
+      margin: 36px 0 45px; }
+    .main-single-page .content__divider {
+      width: 100%;
+      height: 1px;
+      background-color: #eaeaea;
+      margin-bottom: 62px; }
+    .main-single-page .content__filter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 537px;
+      margin: 0 auto; }
+      .main-single-page .content__filter__cartButton {
+        width: 100%;
+        height: 55px;
+        background-color: #ffffff;
+        border: 1px solid #ef5b70;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #ef5b70;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 28px; }
+      .main-single-page .content__filter__imageCartButton {
+        width: 26px;
+        height: 24px;
+        margin-right: 15px; }
+      .main-single-page .content__filter__label {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #2f2f2f;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        display: block; }
+      .main-single-page .content__filter__select {
+        position: relative; }
+      .main-single-page .content__filter__select, .main-single-page .content__filter__quantity {
+        width: 144px;
+        height: 35px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #bcbcbc;
+        padding: 8px 10px; }
+  .main-single-page .slider {
+    height: fit-content;
+    background-color: #f7f7f7;
+    text-align: center; }
+  .main-single-page .card:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16); }
+  .main-single-page .card-title {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #6f6e6e; }
+  .main-single-page .card-text {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #f16d7f; }
+  .main-single-page .card-box {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main-single-page .card-box h2, .main-single-page .card-box .h2 {
+    text-align: center;
+    letter-spacing: 0.025em; }
+  .main-single-page .card-box h2, .main-single-page .card-box .h2 {
+    font-size: 30px;
+    line-height: 54px;
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 64px; }
+  .main-single-page .card-row {
+    margin: 0 !important; }
+  .main-single-page .card {
+    width: 261px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase; }
+  .main-single-page .card:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16); }
+  .main-single-page .card h4, .main-single-page .card .h4 {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #222222;
+    margin: 20px 0 17px; }
+  .main-single-page .card .price {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ef5b70; }
+  .main-single-page .card__content {
+    padding-left: 16px; }
+  @media (max-width: 767.98px) {
+    .main-single-page .content__text {
+      padding: 0 25px; }
+    .main-single-page .content__headline {
+      margin-bottom: 40px; } }
+  @media (max-width: 575.98px) {
+    .main-single-page {
+      margin-bottom: 52px; }
+      .main-single-page .content_wrapper {
+        width: 100%;
+        margin: 47px 0 52px; }
+      .main-single-page .content__filter {
+        width: 100%;
+        padding: 0 25px;
+        flex-direction: column;
+        align-items: center; }
+        .main-single-page .content__filter div {
+          margin-bottom: 15px; }
+        .main-single-page .content__filter__label {
+          margin-bottom: 5px; }
+      .main-single-page .card-box {
+        margin-top: 50px; }
+        .main-single-page .card-box h2, .main-single-page .card-box .h2 {
+          margin-bottom: 26px; } }
+  @media (max-width: 400px) {
+    .main-single-page .content__material-designer {
+      flex-direction: column; }
+      .main-single-page .content__material-designer div:first-child {
+        margin-right: 0;
+        margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
